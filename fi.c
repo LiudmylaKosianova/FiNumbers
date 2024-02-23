@@ -5,7 +5,7 @@ int fibN (int n);
 
 int main(){
 
-    printf("%d\n", fib(1));
+    printf("\nSum is: %d\n", fib(5));
     
     return 0;
 }
@@ -24,8 +24,10 @@ int fibN(int n){
 int fib (int rabbit){    
     
     int sum = 0;
-    for(int i = 0; i<=rabbit; i++){
+    for(int i = 0; i<rabbit; i++){
+         
         sum += fibN(i);
+         
     }
     return sum;
 }
