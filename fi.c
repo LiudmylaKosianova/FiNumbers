@@ -8,3 +8,13 @@ int main(){
     
     return 0;
 }
+
+int fib (int rabbit){
+    int sum =0;
+
+    int fibN(int n){        
+        
+    }
+
+    return sum;
+}
