@@ -4,8 +4,13 @@ int fib (int rabbit);
 int fibN (int n);
 
 int main(){
-
-    printf("\nSum is: %d\n", fib(5));
+    
+    int number;
+    printf("Welcome!\n");
+    printf("Please, enter a number:");
+    scanf("%d", &number);
+    printf("\nThe sum of the first %d Fibonacci numbers is: %d\n",number, fib(number));
+     
     
     return 0;
 }
