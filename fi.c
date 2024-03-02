@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int fib (int rabbit);
-int fibN (int n);
+int fibSum (int rabbit);
+int fibNumber (int n);
 
 int main(){
     
@@ -9,29 +9,29 @@ int main(){
     printf("Welcome!\n");
     printf("Please, enter a number:");
     scanf("%d", &number);
-    printf("\nThe sum of the first %d Fibonacci numbers is: %d\n",number, fib(number));
+    printf("\nThe sum of the first %d Fibonacci numbers is: %d\n",number, fibSum(number));
      
     
     return 0;
 }
 
-int fibN(int n){ 
+int fibNumber(int n){ 
     if(n==0){
         return 0;
     }else if(n==1){
         return 1;
     }
     else{
-        return fibN(n-1) + fibN(n-2);
+        return fibNumber(n-1) + fibNumber(n-2);
     }
 } 
 
-int fib (int rabbit){    
+int fibSum (int rabbit){    
     
     int sum = 0;
     for(int i = 0; i<rabbit; i++){
          
-        sum += fibN(i);
+        sum += fibNumber(i);
          
     }
     return sum;
