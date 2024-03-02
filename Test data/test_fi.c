@@ -14,7 +14,11 @@ int main(){
     assert(fibNumber(7)==13);
     assert(fibNumber(8)==21);
     assert(fibNumber(9)==34);
-    printf("\n fibNumber works\n");
+    printf("\nFirst Fibonacci numbers: ");
+    for(int i=0; i<10; i++){
+        printf("%d ", fibNumber(i));
+    }
+
     assert(fibSum(0)==0);
     assert(fibSum(1)==0);
     assert(fibSum(2)==1);
@@ -25,6 +29,10 @@ int main(){
     assert(fibSum(7)==20);
     assert(fibSum(8)==33);
     assert(fibSum(9)==54);
-    printf("\n fibSum works\n");
+    printf("\n\n");
+    for(int i=0; i<10; i++){
+        printf("The sum of %d Fibonacci numbers is %d\n",i, fibSum(i));
+    }
+    printf("\n");
     return 0;
 }
