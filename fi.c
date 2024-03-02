@@ -3,17 +3,24 @@
 int fibSum (int rabbit);
 int fibNumber (int n);
 
-// int main(){
+int main(){
     
-//     int number;
-//     printf("Welcome!\n");
-//     printf("Please, enter a number:");
-//     scanf("%d", &number);
-//     printf("\nThe sum of the first %d Fibonacci numbers is: %d\n",number, fibSum(number));
+    int number;
+    printf("\nWelcome!\n");
+    do{
+        printf("Please, enter a positive number:");
+        scanf("%d", &number);
+        if(number<0){
+            printf("The number must be greater than 0\n");
+        }
+    }while(number<0);
+
+    printf("\nYou entered %d\n", number);
+    printf("The sum of the first %d Fibonacci numbers is: %d\n\n",number, fibSum(number));
      
     
-//     return 0;
-// }
+    return 0;
+}
 
 int fibNumber(int n){ 
     if(n==0){
